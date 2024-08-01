@@ -1,0 +1,69 @@
+#education{
+    margin-top: 12rem;
+    font-size: 60px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.educontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-inline: 7rem;
+    margin-top: 2rem;
+}
+
+.education-date{
+    color: cyan;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.education-item{
+    background-color: #051129;
+    color: white   ;
+}
+
+.educontent{
+    margin-left: 3rem;
+}
+ 
+.std{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.sch{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@media(max-width : 550px) {
+    #education{
+        font-size: 45px;
+    }
+    
+    .educontainer{
+        padding-inline: 2rem;
+        margin-top: 2rem;
+    }
+
+    .education-date{
+        font-size: 20px;
+    }
+
+    .educontent{
+        margin-left: 1rem;
+    }
+
+    .std{
+        font-size: 21px;
+    }
+
+    .sch{
+        font-size: 15px;
+    }
+}

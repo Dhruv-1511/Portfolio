@@ -1,0 +1,46 @@
+#skill{
+    margin-top: 12rem;
+    font-size: 60px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.icon{
+    font-size: 125px;
+}
+
+.cointainer{
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 6rem;
+    color: white;
+}
+
+.container2{
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.sname{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+@media(max-width: 500px){
+    #skill{
+        font-size: 45px;
+    }
+
+    .sname{
+        font-size: 20px;
+    }
+
+}

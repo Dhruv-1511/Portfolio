@@ -1,0 +1,177 @@
+body{
+  background-color: #000021;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    background-color: #051129;
+    padding-block: 1rem;
+    z-index: 1;
+  }
+  
+  nav {
+    margin-right: 3rem;
+    display: flex;
+    gap: 5rem;
+  }
+  
+  .menu{
+    display: none;
+    color: white;
+  }
+  
+  a {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-inline: 7rem;
+    margin-top: 1rem;
+    color: white;
+  }
+  
+  .text-content {
+    width: 550px;
+  }
+  
+  .title1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .title2 {
+    font-family: 'roboto';
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 1px #747474;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+  }
+  
+  button {
+    height: 2.5rem;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 3rem;
+  }
+  
+  .btn1 {
+    background-color: white;
+    color: black;
+    width: 8rem;
+  }
+  
+  .btn1:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn2 {
+    background-color: black;
+    color: white;
+    width: 14rem;
+  }
+  
+  .btn2:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .side-image {
+    height: 450px;
+    width: 380px;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width : 858px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-inline: 4rem;
+    }
+  
+    a {
+      font-size: 17px;
+      padding: 1rem;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: end;
+      padding: 0px;
+    }
+
+    nav{
+      gap :1rem;
+    }
+  
+    .btn-container{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width : 615px) {
+    nav {
+      display: none;
+    } 
+  
+    .menu{
+      display: block;
+      padding: 1rem;
+    }
+    .container {
+      padding: 1rem;
+    }
+    .navbar{
+      justify-content: end;
+  
+    }
+    .text-content {
+      width: auto
+    }
+    .title1{
+      font-size: 2rem;
+    }
+  
+    .title2{
+      font-size: 15px;
+    }
+  
+    .btn-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 615px;
+    }
+  
+    .img-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .side-image {
+      height: 300px;
+      width: 250px;
+    }
+  }
