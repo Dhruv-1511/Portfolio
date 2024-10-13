@@ -9,11 +9,11 @@ function Project() {
           <div className='projcont'>
             <div className='project'>
               <div className='project-info'>
-                <h2>1. Travel Booking Website</h2><br />
-                <p className='content'>Developed a Travel Booking Website. This website is made with HTML, CSS, and Bootstrap. It only includes the frontend of the website. This website shows many places where we can go for Trip.<br /><br /><br /></p>
+                <h2>1. Food Delivery Website</h2><br />
+                <p className='content'>Developed a Food Delivery Website. This website is made with HTML, CSS, Javascript, React. It includes the frontend of the website.I used states and context to build this Website.<br /><br /><br /></p>
               </div>
               <div className='project-links'>
-                <a href='https://github.com/Dhruv-1511/Traveling.git' className='btn-box'>See Project</a>
+                <a href='https://food-delivere.netlify.app/' className='btn-box'>See Project</a>
               </div>
             </div>
 

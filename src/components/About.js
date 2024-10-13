@@ -6,7 +6,7 @@ function About() {
     <>
       <div id='about'>
         <div className='navbar'>
-          <MenuOutlined className='menu' />
+          <MenuOutlined className='menu'/>
           <nav>
             <a className="nav1" href="#about">About Me</a>
             <a href="#skill">Skills</a>
