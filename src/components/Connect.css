@@ -1,0 +1,108 @@
+.connect-section {
+    padding: 4rem 2rem;
+    background: rgba(8, 27, 41, 0.5);
+    margin-top: 4rem;
+    color: white;
+}
+
+.connect-section h2 {
+    text-align: center;
+    color: #0ef;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.connect-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 3rem auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.connect-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.connect-card {
+    background: rgba(8, 27, 41, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.connect-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(14, 255, 255, 0.2);
+    color: #0ef;
+}
+
+.connect-card svg {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+.connect-card:hover svg {
+    transform: scale(1.2);
+}
+
+.connect-card span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.connect-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0;
+}
+
+.quick-contact {
+    max-width: 600px;
+    margin: 4rem auto 0;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(8, 27, 41, 0.8);
+    border-radius: 15px;
+}
+
+.quick-contact h3 {
+    color: #0ef;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.quick-contact p {
+    margin: 0.5rem 0;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .connect-section {
+        padding: 2rem 1rem;
+    }
+
+    .connect-section h2 {
+        font-size: 2rem;
+    }
+
+    .connect-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .connect-card {
+        padding: 1.5rem;
+    }
+} 

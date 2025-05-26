@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #000021;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -9,6 +10,12 @@ body {
 
 html{
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* This ensures the navbar doesn't overlap content when scrolling */
+}
+
+/* Add smooth transitions for all elements */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 code {

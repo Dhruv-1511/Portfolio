@@ -1,4 +1,4 @@
-#project{
+/* #project{
     margin-top: 12rem;
     font-size: 60px;
     font-weight: 600;
@@ -13,7 +13,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 5rem;
+    gap: 2rem;
     padding: 60px 20px 20px;
 }
 
@@ -24,6 +24,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(14, 255, 255, 0.2);
+    border: 1px solid #0ef;
 }
 
 h2 {
@@ -49,11 +58,16 @@ h2 {
     font-weight: 700;
     box-shadow: 0 0 4px #0ef, 0 0 8px #0ef;
     margin-top: auto;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-box:hover {
-    box-shadow: 0 0 10px cyan,0 0 30px cyan;
-    text-decoration: none;
+    box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+    transform: scale(1.05);
+    text-decoration: none !important;
+    color: black;
 }
 
 .project-links{
@@ -65,4 +79,4 @@ h2 {
     #project{
         font-size: 45px;
     }    
-}
+} */

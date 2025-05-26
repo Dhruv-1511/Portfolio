@@ -1,21 +1,22 @@
-import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Project from "./components/Project";
-import Skill from "./components/Skill";
-import Education from "./components/Education";
+import './App.css';
+import About from './components/About';
+import Skills from './components/Skill';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import FeaturedProjects from './components/FeaturedProjects';
+import Connect from './components/Connect';
 
 function App() {
   return (
-    <>
-      <About/>
-      <Skill/>
-      <Education/>
-      <Project/>
-      <Contact/>
-    </>
-
-   );
+    <div className="App">
+      <About />
+      <Skills />
+      <Education />
+      <Experience />
+      <FeaturedProjects />
+      <Connect />
+    </div>
+  );
 }
 
 export default App;

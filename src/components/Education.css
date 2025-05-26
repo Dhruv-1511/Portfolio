@@ -1,10 +1,5 @@
-#education{
+#education {
     margin-top: 12rem;
-    font-size: 60px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    color: white;
 }
 
 .educontainer{
@@ -13,50 +8,118 @@
     justify-content: space-between;
     padding-inline: 7rem;
     margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-swiper {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+    animation: scroll 40s linear infinite;
+    width: max-content;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.education-swiper:hover {
+    animation-play-state: paused;
+}
+
+.education-card {
+    min-width: 350px;
+    flex: 0 0 auto;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
 }
 
 .education-date{
-    color: cyan;
+    color: #0ef;
     font-size: 24px;
     font-weight: 700;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.education-item{
-    background-color: #051129;
-    color: white   ;
+.education-icon {
+    font-size: 1.5rem;
+    color: #0ef;
+}
+
+.education-item {
+    background-color: rgba(8, 27, 41, 0.8);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education-item:hover {
+    transform: translateY(-10px);
+    border: 1px solid #0ef;
+    box-shadow: 0 0 20px rgba(14, 255, 255, 0.1);
 }
 
 .educontent{
-    margin-left: 3rem;
+    margin-left: 0;
 }
  
 .std{
     font-size: 25px;
     font-weight: 500;
+    color: #0ef;
+    margin-bottom: 0.5rem;
 }
 
 .sch{
     font-size: 18px;
     font-weight: 300;
+    color: #ccc;
+    margin-bottom: 1rem;
 }
 
-@media(max-width : 550px) {
+.result {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #0ef;
+    font-weight: 500;
+}
+
+.award-icon {
+    color: #0ef;
+}
+
+@media(max-width: 768px) {
+    .educontainer {
+        padding-inline: 2rem;
+    }
+
+    .education-card {
+        min-width: 300px;
+    }
+}
+
+@media(max-width: 550px) {
     #education{
         font-size: 45px;
     }
     
-    .educontainer{
-        padding-inline: 2rem;
-        margin-top: 2rem;
-    }
-
     .education-date{
         font-size: 20px;
-    }
-
-    .educontent{
-        margin-left: 1rem;
     }
 
     .std{
@@ -65,5 +128,9 @@
 
     .sch{
         font-size: 15px;
+    }
+
+    .education-card {
+        min-width: 250px;
     }
 }
